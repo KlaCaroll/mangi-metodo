@@ -1,0 +1,5 @@
+requete préparée 
+PREPARE SELECT * FROM ...
+REPRESENTATION INTERNE
+
+Go 

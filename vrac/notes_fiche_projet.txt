@@ -1,0 +1,70 @@
+Notes 10/07/2024 PLI
+
+Quelle architecture possible ?
+
+Coté serveur :
+	
+	API (langage / framework) :
+		-> PHP / laravel - symfony : 
+			Le vieux de la vielle, utilisé par encore bcp d'entreprise, toujours bien sur un CV.
+			Est un langage de template et non de programmation DONC mets KO l'argument "Utilisez le langage le plus adapté".
+			Symfony est à notre projet ce qu' un porte avion est à la pêche à la ligne (surdimentionné).
+			
+		-> Node / express :
+			Aussi largement utilisé mais faire attention si utilisation du même langage (JS/TS) pour le front, risque de confusion
+			
+		-> Python / flask - Django :
+		
+		-> Go / bibliothèque standard
+			Utilise la bibliothèque standard, difficile de faire mieux niveau facilité de mise en place
+			A la question qui suis-je, il répond : "Un langage d'API" donc fait pour les API.
+			Est le némésis de Robin, faire attention aux remarques et raisonements biaisés.
+			
+		
+	DATABASE :
+		-> Un bon CSV :
+			Simple, basique
+			Permet à ton serveur de cuire des oeufs au plat (attention à la surchauffe si très gros fichier)
+			
+		-> mysql/mariadb (SQL):
+			Serveur de base de données, est indépendant des autres services.
+			
+		-> sqlite (SQL):
+			base relationnelle disponible dans un repertoire directement dans l'API.
+			Avantage : facilement extrayable et transportable pour montrer les bugs  aux copains.
+			Désavantage: lié à l'API.
+			
+		-> Les originaux : mongodb / cassandra /redis
+	
+	
+	Style d'architecture ( format d'échange entre API - app) :
+		-> REST (JSON)
+		-> XML
+		-> GRAPHQL
+		
+		
+Coté client :
+
+	App web / mobile (App web responsive) :
+		-> REACT /TS :
+			Rends immédiatement l'utilisation de node pour le coté serveur non recommandé.
+			
+	Tooling :
+		-> Vitejs :
+		-> Biome :
+			Pour le formatage du code
+			
+	
+	
+Divers :
+	Editeur:
+		-> VScode
+		-> Ton journal intime
+	
+	Gestion de l'environement :
+		-> Utilisation de makefile faits maison pour des démarrage indépendant et automatisés
+		-> Utilisation de docker compose donc conteneurisation
+		
+	Versioning :
+		-> On ne le nomme plus : GIT
+		
