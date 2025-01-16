@@ -1,5 +1,6 @@
 # Groupe de Mangi
 
+[go to mangi](https://github.com/KlaCaroll/mangi)
 # Infrastructure
 
 In this repository you'll find all schemas of deployment
